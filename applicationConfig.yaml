@@ -1,0 +1,35 @@
+# 设置服务的host
+host: "127.0.0.1"
+# 设置服务的port
+# port: 8000
+
+# 启动banner
+# banner: 'Dashaping'
+
+#根路径设置 默认 '/'
+# rootPath: '/'  
+
+# 程序环境变量设置 可在ENV 下自定义环境变量 通过 process[ENV].[自定义变量]
+ENV: 
+  modal: 'DEV'
+
+# 热加载更新
+hotUpdata: true
+hotFiles: ['src']
+
+# 设置静态资源 文件夹 默认值如下
+staticResource: 
+  # string 自定义静态资源根路径； 'auto' 使用rootPath； 不配置 则默认为 '/'
+  # publicPath: 'auto' 
+  # 直接使用默认配置
+  # fileName: ["www", "static"]
+  # 单独设置 静态文件路径和option setHeaders 为 setHeaders_js 且值为js路径
+  fileName: 
+    - {
+      path: "/static",
+      filePath: ["static"],
+#       setHeaders_js: "/setHeaders.js"
+    }
+
+# 文件上传临时文件夹
+# file_tmp: upload_tmp
