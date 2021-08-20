@@ -7,9 +7,10 @@ import {
 
 import Controllers from '@controllers'
 import LogMiddleWare from '@middleWares'
+import muterMiddleWare from '@middleWares/muterMiddleWare'
 
 @Run
-@MiddleWares([LogMiddleWare])
+@MiddleWares([LogMiddleWare, muterMiddleWare])
 @CombinControllers(Controllers)
 class App extends Application{
     

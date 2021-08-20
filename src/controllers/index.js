@@ -1,7 +1,5 @@
-import TestController from './TestController'
-import NewTestController from './NewTestController'
+import SketchController from './SketchController'
 
 module.exports = [
-    TestController,
-    NewTestController
+	SketchController
 ]

@@ -8,11 +8,13 @@
 </head>
 
 <body>
-	<div style="text-align: center; padding-top: 20%;">
-		<span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; font-weight: bold; font-size: 80px;">
-			Hello Dashaping
-		</span>
-	</div>
+	<h3>文件上传：</h3>
+    选择一个文件上传: <br />
+    <form action="/sketch/tojson" method="post" enctype="multipart/form-data">
+			Select images: <input type="file" name="content" multiple="multiple" />
+        <br />
+        <input type="submit" value="上传文件" />
+    </form>
 </body>
 <script>
 

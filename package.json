@@ -22,11 +22,13 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
+    "compressing": "^1.5.1",
     "dashaping": "git+https://github.com/Yves-Zhang/dashaping.git",
     "express": "^4.17.1",
     "i": "^0.3.6",
     "module-alias": "^2.2.2",
     "moment": "^2.27.0",
+    "multer": "^1.4.3",
     "node-banner": "^1.4.0",
     "nodemailer": "^6.6.3",
     "nodemon": "^2.0.4",
@@ -39,6 +41,6 @@
     "@www": "www",
     "@controllers": "src/controllers",
     "@middleWares": "src/middleWares",
-    "@service": "src/service"
+    "@services": "src/services"
   }
 }
